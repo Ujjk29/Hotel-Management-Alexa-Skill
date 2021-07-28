@@ -1,0 +1,6 @@
+com/amazon/hotelManagement/helpers/HandlerInputBuilder.class
+com/amazon/hotelManagement/handlers/LaunchRequestHandlerTest.class
+com/amazon/hotelManagement/constants/DialogConstant.class
+com/amazon/hotelManagement/helpers/AssertHelper.class
+com/amazon/hotelManagement/handlers/InProgressOrderFoodIntentHandlerTest.class
+com/amazon/hotelManagement/handlers/CompletedOrderFoodIntentHandlerTest.class
