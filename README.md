@@ -2,13 +2,13 @@
 
 ## Index
 
-### Introduction
+## Introduction
 Hotel Management Alexa skill is able to provde hotel specific services like ordering food, requesting cleaning services ... etc for the hotel customers. Currently the skill supports taking order from the customers. If customers know what they want to order they can directly order it. Otherwise the skill will use multi-turn model to decide what you want to eat. You can also schedule your order to specific time.
 
-### Problem Statement
+## Problem Statement
 Hotel guests need to call the hotel receptions to put their requests like foor orders, room service, laundry services ... etc. And then receptionist forward their requests to different department of hotel. This whole process takes precious time of hotel. And to handle simultaneous calls from guests require both human resources and captial. So our aim is to solve this problem by replacing old telephones with our Alexa Skill. Now the requests from customers will directly forwarded to the specific department of the hotel based on request. This will save hotel captial and human resources.
 
-### Requirements
+## Requirements
 1. **Ordering Food**
     1. **Hotel Customer** can **place order** on what to eat through Alexa. Skill must be **multi-turn**, so that skill can help customer in choosing the right food that is available.
     2. HMAS must be able to **record the customer’s order** in text form (preferably in Hotel’s Website, but I will  go with Google Sheets for now). And this record must be available to **Restaurant Captain** (or Chef Manager).
@@ -34,16 +34,21 @@ Hotel guests need to call the hotel receptions to put their requests like foor o
 5. **Smart Home(Room) Services**
     1. Must be able to use smart home skills. Smart home skills are already present on Alexa store. If any new IOT device is added to the room, both manufacturer and developer will need to work on this sub-feature together.
 
-### Top Priority Requirement
+## Top Priority Requirement
 Customer should be able to order food using Hotel Management Alexa Skill (HMAS). The order should be received by resturant captain. Customer should also be able to schedule the order.
 
-### Approach
+## Approach
 User can behave two ways:
 1. User can provide directly the food that they want to eat. This case is trivial. We can directly get the food from the incoming request and will ask if user wants to schedule the order or not and proceed further.
 2. User wants the menu first. This part is solved by using disabling the delegate feature. Meaning the backend will direct the flow of the conversation. This case makes the skill multi-turn. Alexa will ask would you like veg food or non veg food and if you select veg then she will procced with the sub types of veg food and so on.
 
-### Use Case Diagram
+## Use Case Diagram
 <img src="resources/image/Use Case Diagram HMAS.jpg">
 
-### High Level Design
+## High Level Design
 <img src="resources/image/High Level Design HMAS-Version 1.jpg">
+
+## Sequence Diagram
+
+## Scope for Further Developements
+We can also create a fully hosted website for the hotel, which will show the requests from the customers. The webiste can be made interactive to notify the customers that their request is seen by the staff and will give updates at each step.
