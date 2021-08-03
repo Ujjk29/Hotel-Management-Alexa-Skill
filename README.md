@@ -49,6 +49,7 @@ User can behave two ways:
 <img src="resources/image/High Level Design HMAS-Version 1.jpg">
 
 ## Sequence Diagram
+<img src="resources/image/Sequence Diagram.jpg">
 
 ## Scope for Further Developements
 We can also create a fully hosted website for the hotel, which will show the requests from the customers. The webiste can be made interactive to notify the customers that their request is seen by the staff and will give updates at each step.
